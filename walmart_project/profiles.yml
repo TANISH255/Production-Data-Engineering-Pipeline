@@ -1,0 +1,13 @@
+walmart_project:
+  target: dev
+  outputs:
+    dev:
+      type: databricks
+      catalog: walmart
+      schema: dbt_schema
+      host: dbc-d0725e26-f878.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/c945ec82e9ea5fc3
+      threads: 1
+      auth_type: oauth
+      client_id: "{{ env_var('DATABRICKS_CLIENT_ID') }}"
+      client_secret: "{{ env_var('DATABRICKS_CLIENT_SECRET') }}"

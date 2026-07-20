@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: products_t
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+      - name: price
+        tests:
+          - positive_price
+
+  - name: orders_t
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+     
