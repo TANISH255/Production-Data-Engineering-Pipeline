@@ -5,7 +5,7 @@ walmart_project:
       type: databricks
       catalog: walmart
       schema: dbt_schema
-      host: dbc-d0725e26-f878.cloud.databricks.com
+      host: <HOSTNAME>
       http_path: /sql/1.0/warehouses/c945ec82e9ea5fc3
       threads: 1
       auth_type: oauth
